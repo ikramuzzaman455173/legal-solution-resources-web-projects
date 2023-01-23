@@ -95,7 +95,7 @@ a:hover {
 }
 
 section {
-  margin:3.5rem 0;
+  margin: 3.5rem 0;
 }
 
 .btns {
@@ -202,11 +202,37 @@ header p {
   width: unset;
 }
 
-.service-box h5 {
+.service-box h5,.carousel-item h5 {
   font-size: 2rem;
   font-weight: var(--fw-lg);
 }
 
 #services .cols {
   box-shadow: var(--shadow);
+}
+
+/* *<===REVIEWS SECTION STYLES===>* */
+.slider {
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url('../images/banner.png');
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.carousel-item img {
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.carousel-inner{
+  width:900px;
+  text-align:center;
+}
+.carousel-item p{
+  width:550px;
+  margin:0 auto;
+  font-size:17px;
 }
