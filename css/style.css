@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+/* font-family: 'EB Garamond', serif; */
+
+:root {
+  --primary: #B68C5A;
+  --dark: #414040;
+  --light: #E7E7E7;
+  --secondary: #707070;
+  --white: #FFFFFF;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  --fw-lg: 700;
+  --fw-md: 600;
+  --fw-sm: 500;
+}
+
+* {
+  text-transform: capitalize;
+  transition: all .3s linear;
+}
+html{
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+body {
+  font-family: 'EB Garamond', serif;
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+/* *<===helper class===>* */
+.dark {
+  color: var(--dark) !important;
+}
+
+.light {
+  color: var(--light) !important;
+}
+
+.secondary {
+  color: var(--secondary) !important;
+}
+
+.primary {
+  color: var(--primary) !important;
+}
+
+.ps-color {
+  background: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.fw-lg {
+  font-weight: var(--fw-lg) !important;
+}
+
+.fw-md {
+  font-weight: var(--fw-md) !important;
+}
+
+.fw-sm {
+  font-weight: var(--fw-sm) !important;
+}
+
+.span {
+  color: var(--primary);
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: var(--dark);
+  transition: all 0.4s ease;
+  font-weight: var(--fw-md);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+.span {
+  color: var(--primary);
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.btns {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.btn {
+  padding: .5rem 1.5rem;
+}
+
+.btn-brand {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: var(--fw-md);
+}
+
+.btn-brand:hover {
+  color: var(--white);
+  background: var(--btn-hover);
+}
+
+.bg-cover {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.intro {
+  margin-bottom: 2.5rem;
+}
+
+.intro h5 {
+  font-weight: var(--fw-light) !important;
+}
+
+.intro h1 {
+  font-weight: var(--fw-lg) !important;
+  color: var(--dark) !important;
+}
+
+.intro p {
+  max-width: 31.25rem;
+  margin: auto;
+}
+
+/* *<===NAV SECTION STYLES===>* */
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.25rem;
+  font-weight: var(--fw-sm) !important;
+  letter-spacing: 1px;
+  color: var(--secondary) !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link.active {
+  color: var(--primary) !important;
+}
+
+.navbar-nav .nav-item .nav-link .icon {
+  color: var(--primary);
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover .icon {
+  color: var(--secondary);
+}
+
+header {
+  background: linear-gradient(rgba(9, 32, 50, 0.2), rgba(9, 32, 50, 0.5)), url('../images/banner.png');
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1{
+  font-size:4.5rem;
+  letter-spacing:1.5px;
+}
+header p{
+  font-size:1.125rem;
+  letter-spacing:.5px;
+  font-weight:var(--fw-sm) !important;
+  width:550px !important;
+}
+.search-box .form-control:focus{
+  border-color:var(--primary);
+  box-shadow:none;
+}
+.form-control{
+  color:var(--primary) !important;
+  font-size:1.125rem;
+}

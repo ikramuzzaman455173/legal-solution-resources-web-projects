@@ -1,0 +1,35 @@
+/* *<===media queries===>* */
+
+@media screen and (max-width:768px) {
+  header h1 {
+    font-size: 2.5rem !important;
+  }
+
+  header p {
+    margin: 0 1rem !important;
+    width: 450px !important;
+  }
+}
+
+@media screen and (max-width:576px) {
+  header p {
+    width: 90% !important;
+  }
+
+  header h1 {
+    font-size: 2rem !important;
+  }
+  .search-box .search{
+    width:75%;
+    margin:auto;
+  }
+  .search-box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .search-box .btns{
+    margin-top:1rem;
+    width:120px !important;
+  }
+}
