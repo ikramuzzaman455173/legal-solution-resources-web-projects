@@ -122,15 +122,19 @@ section {
   padding: .5rem 1.5rem;
 }
 
-.btn-brand {
-  background-color: var(--primary);
-  color: var(--white);
-  font-weight: var(--fw-md);
+.card-group-1 .card {
+  border: 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+  border-right: 1px solid rgba(0, 0, 0, .125) !important;
 }
 
-.btn-brand:hover {
-  color: var(--white);
-  background: var(--btn-hover);
+.card-group-2 .card {
+  border: 0 !important;
+  border-right: 1px solid rgba(0, 0, 0, .125) !important;
+}
+
+.card-group .card-3, .card-group .card-2 {
+  border-right: 0 !important;
 }
 
 .bg-cover {
@@ -230,6 +234,13 @@ header p {
 #services .cols {
   box-shadow: var(--shadow);
 }
+::placeholder{
+  font-size:1rem;
+  text-transform: capitalize;
+  color:var(--secondary);
+  font-weight:normal;
+}
+/* *<===helper class end===>* */
 
 /* *<===REVIEWS SECTION STYLES===>* */
 .slider {
@@ -301,16 +312,19 @@ header p {
 .team-member {
   text-align: center;
 }
-.team-member .content h5{
-  font-size:1.5rem;
-  font-weight:var(--fw-lg) !important;
+
+.team-member .content h5 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-lg) !important;
 }
-.team-member .content p{
-  font-size:1rem;
-  font-weight:var(--fw-md) !important;
-  letter-spacing:.5px;
-  font-style:italic;
+
+.team-member .content p {
+  font-size: 1rem;
+  font-weight: var(--fw-md) !important;
+  letter-spacing: .5px;
+  font-style: italic;
 }
+
 .team-member .img-wrapper {
   position: relative;
   overflow: hidden;
@@ -351,13 +365,13 @@ header p {
 .social-links a {
   background: rgba(255, 255, 255, 0.3);
   width: 2.5rem;
-  height:2.5rem;
+  height: 2.5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
   font-size: 1.3rem;
-  margin:.5rem 0;
+  margin: .5rem 0;
   margin-right: .5rem;
   color: var(--white);
 }
@@ -365,4 +379,49 @@ header p {
 .social-links a:hover {
   background: var(--white);
   color: var(--primary);
+}
+
+/* *<===CONTACT US===>* */
+.cards {
+  background: var(--grey);
+}
+
+.contact-box img {
+  width: unset;
+}
+
+.contact-box h5 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-lg);
+  letter-spacing: 1px !important;
+}
+
+.contact-form .inputs {
+  height: 4.5rem;
+}
+
+.contact-form .msg {
+  height: 8rem;
+  resize: none;
+}
+
+.contact-form .inputs, .contact-form .msg {
+  background: var(--grey);
+  border: 0 !important;
+  outline: var(--primary) !important;
+  font-size: 1.5rem;
+  text-transform: none;
+  font-weight: var(--fw-sm);
+}
+
+.contact-form .form-control:focus {
+  border: 1px solid var(--primary) !important;
+  box-shadow: none;
+}
+
+.btn-contact {
+  font-size: 1.5rem;
+  font-weight: var(--fw-lg);
+  letter-spacing: 1px;
+
 }
