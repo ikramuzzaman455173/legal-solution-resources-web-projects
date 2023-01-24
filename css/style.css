@@ -118,6 +118,7 @@ section {
   font-weight: var(--fw-lg);
 }
 
+
 .btn {
   padding: .5rem 1.5rem;
 }
@@ -164,6 +165,10 @@ section {
 
 p {
   color: var(--secondary) !important;
+}
+
+.icons {
+  width: unset;
 }
 
 /* *<===NAV SECTION STYLES===>* */
@@ -234,12 +239,15 @@ header p {
 #services .cols {
   box-shadow: var(--shadow);
 }
-::placeholder{
-  font-size:1rem;
+
+::placeholder {
+  font-size: 1rem;
   text-transform: capitalize;
-  color:var(--secondary);
-  font-weight:normal;
+  /* color: var(--secondary); */
+  color: #A0A0A0 !important;
+  font-weight: normal;
 }
+
 /* *<===helper class end===>* */
 
 /* *<===REVIEWS SECTION STYLES===>* */
@@ -390,7 +398,7 @@ header p {
   width: unset;
 }
 
-.contact-box h5 {
+.contact-box h5, .footer .row h4 {
   font-size: 1.5rem;
   font-weight: var(--fw-lg);
   letter-spacing: 1px !important;
@@ -424,4 +432,43 @@ header p {
   font-weight: var(--fw-lg);
   letter-spacing: 1px;
 
+}
+
+/* *<===FOOTER SECTION STYLES===>* */
+.footer {
+  background: #111111;
+  color: var(--white);
+  margin-bottom: 0 !important;
+  min-height: 500px;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.footer .row p {
+  margin-top: 1rem;
+}
+
+.footer .row .logo {
+  width: unset;
+}
+
+.footer .row .menu-links a {
+  color: var(--secondary) !important;
+}
+
+.footer .row .menu-links a:hover {
+  color: var(--primary) !important;
+}
+
+.footer .row form {
+  position: relative;
+}
+
+.footer .row form .search-email {
+  width:300px !important;
+  height:3rem;
+}
+.footer .row form .btns {
+  position: absolute;
+  right: 5px;
 }

@@ -14,6 +14,10 @@
     width: 400px;
     font-size: 14px;
   }
+
+  .footer .row form .btns {
+    transform: translate(-172px, 0px);
+  }
 }
 
 @media screen and (max-width:576px) {
@@ -42,7 +46,15 @@
   }
 
   .carousel-item p {
-    width:90%;
-    font-size:0.75rem;
+    width: 90%;
+    font-size: 0.75rem;
+  }
+
+  .footer .row form .search-email {
+    width: 75% !important;
+  }
+
+  .footer .row form .btns {
+    transform: translate(-87px, 0px);
   }
 }
