@@ -32,6 +32,25 @@ body {
   line-height: 1.7;
 }
 
+*::selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
+html::-webkit-scrollbar {
+  width:0.75rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius:50rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+
 /* *<===helper class===>* */
 .dark {
   color: var(--dark) !important;
@@ -186,7 +205,7 @@ p {
 .navbar-nav .nav-item .nav-link .icon {
   color: var(--primary);
   vertical-align: middle;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .navbar-nav .nav-item .nav-link:hover .icon {
@@ -465,10 +484,36 @@ header p {
 }
 
 .footer .row form .search-email {
-  width:300px !important;
-  height:3rem;
+  width: 300px !important;
+  height: 3rem;
 }
+
 .footer .row form .btns {
   position: absolute;
   right: 5px;
+}
+
+.footer .row form .btns i {
+  transform: rotate(-40deg);
+  font-size: 1.5rem;
+}
+
+
+/* *<===MODAL===>* */
+.modal-body .form-control:focus {
+  box-shadow: none;
+  outline: 1px solid var(--primary) !important;
+}
+
+.modal-body .form-control {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  border-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.modal-body .form-label {
+  color: var(--body);
+}
+
+.modal-body textarea {
+  resize: none !important;
 }

@@ -21,8 +21,16 @@
 }
 
 @media screen and (max-width:576px) {
+  .navbar-brand {
+    margin: 1rem 0 !important;
+  }
+
   header p {
     width: 90% !important;
+  }
+  .nav .container{
+    display: flex !important;
+    justify-content: space-between !important;
   }
 
   header h1 {
@@ -56,5 +64,9 @@
 
   .footer .row form .btns {
     transform: translate(-87px, 0px);
+  }
+
+  .faq .imgs {
+    margin: 1rem;
   }
 }
